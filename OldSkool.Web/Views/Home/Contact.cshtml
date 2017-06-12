@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
+<div id="contactForm">
+    <input type="text" placeholder="Enter your complaint" />
+    <button type="button" v-on:click="SubmitContactForm()">Submit</button>
+</div>
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.js" data-main="/js/bundles.config"></script>
+    <script>
+        require(["contactpage"], function () {
+            console.log("done contact page");
+        });
+    </script>
+}

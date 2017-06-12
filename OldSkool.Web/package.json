@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "axios": "^0.15.3",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.1.5",
+    "typescript": "^2.1.6",
+    "vee-validate": "^2.0.0-rc.5",
+    "vue": "^2.1.10"
+  }
+}
